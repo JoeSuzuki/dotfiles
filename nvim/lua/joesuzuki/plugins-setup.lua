@@ -33,7 +33,7 @@ return packer.startup(function(use)
 
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-  -- use("bluz71/vim-nightfly-guicolors") 
+  -- use("bluz71/vim-nightfly-guicolors")
   use("hachy/eva01.vim") -- preferred colorscheme
 
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
@@ -58,9 +58,11 @@ return packer.startup(function(use)
 
   -- fuzzy finding w/ telescope
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
-  use({ "nvim-telescope/telescope.nvim", branch = "0.1.x",
-    requires = {{'nvim-lua/plenary.nvim'}},
-    run = "brew install ripgrep-all fd"
+  use({
+    "nvim-telescope/telescope.nvim",
+    branch = "0.1.x",
+    requires = { { "nvim-lua/plenary.nvim" } },
+    run = "brew install ripgrep-all fd",
   }) -- fuzzy finder
   use({ "nvim-telescope/telescope-ui-select.nvim" }) -- for showing lsp code actions
 
