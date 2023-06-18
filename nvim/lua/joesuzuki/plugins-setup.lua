@@ -60,7 +60,6 @@ return packer.startup(function(use)
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
   use({
     "nvim-telescope/telescope.nvim",
-    branch = "0.1.x",
     requires = { { "nvim-lua/plenary.nvim" } },
     run = "brew install ripgrep-all fd",
   }) -- fuzzy finder
@@ -91,7 +90,7 @@ return packer.startup(function(use)
       { "nvim-treesitter/nvim-treesitter" },
     },
   }) -- enhanced lsp uis
-  use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
+  use("mrcjkb/haskell-tools.nvim")
   use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
   -- formatting & linting
