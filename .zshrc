@@ -134,3 +134,5 @@ alias gd="git diff --color --color-words --abbrev"
 alias gbl="git blame"
 alias gps="git push"
 alias gpl="git pull"
+
+[ -f "/Users/joesuzuki/.ghcup/env" ] && source "/Users/joesuzuki/.ghcup/env" # ghcup-env
